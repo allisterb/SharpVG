@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Version>0.0.9</Version>
     <VersionSuffix>alpha</VersionSuffix>
     <Authors>Chris Nikkel</Authors>
@@ -20,7 +20,7 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <RootNamespace>SharpVG</RootNamespace>
     <AssemblyName>SharpVG</AssemblyName>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,6 +55,10 @@
     <Compile Include="Axis.fs" />
     <Compile Include="Plot.fs" />
     <Compile Include="Svg.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="4.3.4" />
   </ItemGroup>
 
 </Project>
